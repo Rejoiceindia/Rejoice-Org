@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+.radial-gradient {
+  background: rgb(42, 41, 56);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(42, 41, 56, 1) 0%,
+    rgba(32, 32, 38, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(42, 41, 56, 1) 0%,
+    rgba(32, 32, 38, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(42, 41, 56, 1) 0%,
+    rgba(32, 32, 38, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2938",endColorstr="#202026",GradientType=1);
+}
