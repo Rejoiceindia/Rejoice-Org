@@ -16,25 +16,14 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     useEffect(() => {
         if (theme === 'dark') {
             document.documentElement.classList.add('dark');
-            console.log('Added dark class');
         } else {
             document.documentElement.classList.remove('dark');
         }
         localStorage.setItem('theme', theme);
-        console.log('Removed dark class');
     }, [theme]);
-
-    useEffect(() => {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) {
-            setTheme(storedTheme);
-        }
-    }, []);
-    
 
     const toggleTheme = () => {
         setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-        window.location.reload();
     };
 
     const value = { theme, toggleTheme }
