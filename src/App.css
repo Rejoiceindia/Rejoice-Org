@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 .radial-gradient {
   background: rgb(42, 41, 56);
