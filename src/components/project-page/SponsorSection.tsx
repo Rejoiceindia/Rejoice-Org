@@ -38,10 +38,12 @@ const SponsorList: React.FC = () => {
   const list = [1, 2, 3, 4];
   return (
     <div className="flex flex-col items-center gap-10">
-      <StyledHeading>PROJECT TIMELINE</StyledHeading>
+      <StyledHeading>OUR SPONSORS</StyledHeading>
       <div className="flex gap-10 items-center justify-center">
         {list.map((item, index) => {
-          return <div className="w-44 h-20 rounded-2xl bg-white"></div>;
+          return (
+            <div key={index} className="w-44 h-20 rounded-2xl bg-white"></div>
+          );
         })}
       </div>
     </div>
