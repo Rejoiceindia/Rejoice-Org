@@ -20,3 +20,29 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2938",endColorstr="#202026",GradientType=1);
 }
+
+.radial-gradient-v2 {
+  background: rgb(59, 58, 78);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(59, 58, 78, 1) 0%,
+    rgba(28, 27, 40, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(59, 58, 78, 1) 0%,
+    rgba(28, 27, 40, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(59, 58, 78, 1) 0%,
+    rgba(28, 27, 40, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3a4e",endColorstr="#1c1b28",GradientType=1);
+}
+
+.neuromorphic {
+  border-radius: 21px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #ebebeb, -10px -10px 20px #ffffff;
+}
