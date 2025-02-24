@@ -3,7 +3,7 @@ export const ProjectDetails = [
         id : 1,
         projectName : 'Advaiya',
         description : 'Meet Advaiya—your intelligent Real Estate AI Assistant with a custom knowledge base. Transform property management with AI-driven efficiency. Efficiently manage, run, and grow your real estate business.',
-        image : '/images/advaiya.jpg',
+        image : '/images/project2.jpg',
         techStack : ['React', 'TypeScript', 'Web Assembly', 'Surreal DB', 'gRPC'],
         contributors : [
             { name: "Raghavendra Shande", image: "https://github.com/raghavendrashande.png" },
@@ -21,7 +21,7 @@ export const ProjectDetails = [
         id : 2,
         projectName : 'Advaiya',
         description : 'Meet Advaiya—your intelligent Real Estate AI Assistant with a custom knowledge base. Transform property management with AI-driven efficiency. Efficiently manage, run, and grow your real estate business.',
-        image : '/images/advaiya.jpg',
+        image : '/images/advaiya.png',
         techStack : ['React', 'TypeScript', 'Web Assembly', 'Surreal DB', 'gRPC'],
         contributors : [
             { name: "Raghavendra Shande", image: "https://github.com/raghavendrashande.png" },
