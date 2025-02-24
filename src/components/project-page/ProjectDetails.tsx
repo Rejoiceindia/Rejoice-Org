@@ -12,15 +12,15 @@ const ProjectDetails: React.FC<Props> = ({
   projectDetalsImage,
 }) => {
   const [image, setImage] = useState<string>(projectDetalsImage);
-  useEffect(() => {
-    import(`../assets/images/ai-assistant-demo.png`)
-      .then((image) => {
-        setImage(image.default);
-      })
-      .catch((error) => {
-        console.error("Error loading image:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   import(`../assets/images/ai-assistant-demo.png`)
+  //     .then((image) => {
+  //       setImage(image.default);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error loading image:", error);
+  //     });
+  // }, []);
   return (
     <div className="flex flex-col gap-8 p-10">
       <StyledHeading>MORE ABOUT THIS PROJECT</StyledHeading>
