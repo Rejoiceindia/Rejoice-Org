@@ -34,3 +34,40 @@ export const projectData = {
         }
     ]
 }
+
+export const contributorList = [
+    {
+        name: "Raghavendra S H",
+        role: "Systems engineer",
+        socialLinks: {
+            github: 'raghavendrashande',
+            linkedin: 'raghavendrahande'
+        },
+    },
+    {
+        name: "Roshanali Narsindani",
+        role: "rex3992",
+        socialLinks: {
+            github: 'raghavendrashande',
+            linkedin: 'https://www.linkedin.com/in/roshanalinarsindani'
+        },
+    },
+
+    {
+        name: "Aneesh Sharma",
+        role: "Business Intelligence Engineer",
+        socialLinks: {
+            github: 'aneeshsharma72067',
+            linkedin: 'helloaneesh'
+        },
+    },
+    {
+        name: "Basita Tashfeen",
+        role: "Business Intelligence Engineer",
+        socialLinks: {
+            github: '',
+            linkedin: ''
+        },
+    },
+
+]
