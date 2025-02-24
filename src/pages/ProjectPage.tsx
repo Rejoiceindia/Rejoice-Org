@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../components/project-page/Hero";
-import { projectData } from "../constants";
+import { projectData } from "../Data";
 import ProjectDetails from "../components/project-page/ProjectDetails";
 import TechStackComponent from "../components/project-page/TechStackList";
 import FeaturesSection from "../components/project-page/FeaturesSection";
