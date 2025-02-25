@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { GitHub, Linkedin, Twitter } from "../assets/Icons";
 
 const Footer = () => {
     return (
@@ -20,25 +20,19 @@ const Footer = () => {
                            target="_blank" 
                            rel="noopener noreferrer"
                            className="hover:text-[#4F67FF] transition-colors">
-                            <FaGithub className="w-6 h-6" />
+                            <GitHub className="w-6 h-6"/> 
                         </a>
                         <a href="https://twitter.com/Rejoiceindia" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            className="hover:text-[#4F67FF] transition-colors">
-                            <FaTwitter className="w-6 h-6" />
+                            <Twitter className="w-6 h-6"/> 
                         </a>
                         <a href="https://linkedin.com/company/Rejoiceindia" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            className="hover:text-[#4F67FF] transition-colors">
-                            <FaLinkedin className="w-6 h-6" />
-                        </a>
-                        <a href="https://instagram.com/Rejoiceindia" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           className="hover:text-[#4F67FF] transition-colors">
-                            <FaInstagram className="w-6 h-6" />
+                            <Linkedin className="w-6 h-6"/> 
                         </a>
                     </div>
                 </div>
