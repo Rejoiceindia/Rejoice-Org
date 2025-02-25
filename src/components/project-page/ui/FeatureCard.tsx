@@ -18,12 +18,12 @@ const FeatureCard: React.FC<Props> = ({ gradient }) => {
       transition={{ delay: 0.2, duration: 0.4 }}
       className="relative flex pt-10 items-center justify-center rounded-xl bg-white neuromorphic"
     >
-      <div className="flex items-center justify-center absolute  -top-10 left-[25%] sm:left-[10%]">
+      <div className="flex items-center justify-center absolute -top-10 left-[25%] sm:left-[10%]">
         <StyledIcon gradient={gradient}>
           <Globe />
         </StyledIcon>
       </div>
-      <div className="flex flex-col p-5 sm:p-7 gap-5">
+      <div className="flex flex-col p-5 sm:p-7  gap-5">
         <h2 className="text-lg sm:text-2xl max-sm:hidden font-medium text-slate-900">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>

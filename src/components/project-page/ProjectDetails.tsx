@@ -34,8 +34,8 @@ const ProjectDetails: React.FC<Props> = ({
           transition={{ delay: 0.2, duration: 0.4 }}
           className="w-1/2"
         >
-          <p className="text-gray-700 mb-4">{projectDetailsText[0]}</p>
-          <p className="text-gray-700">{projectDetailsText[1]}</p>
+          <p className="text-gray-700 dark:text-gray-300 dark:duration-300 mb-4">{projectDetailsText[0]}</p>
+          <p className="text-gray-700 dark:text-gray-300 dark:duration-300">{projectDetailsText[1]}</p>
         </motion.div>
 
         <motion.div

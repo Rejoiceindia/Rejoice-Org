@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../components/project-page/Hero";
-import { projectData } from "../Data";
+import { projectData } from "../Data/index";
 import ProjectDetails from "../components/project-page/ProjectDetails";
 import TechStackComponent from "../components/project-page/TechStackList";
 import FeaturesSection from "../components/project-page/FeaturesSection";
@@ -14,7 +14,7 @@ type Props = {};
 
 const ProjectPage: React.FC<Props> = () => {
   return (
-    <div className="flex flex-col gap-20 w-full text-white bg-[#f0f0f0]">
+    <div className="flex flex-col gap-20 w-full text-white bg-[#f0f0f0] dark:bg-[#0d0d0d]">
       <HeroSection
         projectName={projectData.projectName}
         projectDescription={projectData.projectDescription}

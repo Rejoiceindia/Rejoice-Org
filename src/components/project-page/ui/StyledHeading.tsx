@@ -14,7 +14,7 @@ const StyledHeading: React.FC<Props> = ({ children }) => {
       viewport={{
         once: true,
       }}
-      className="text-3xl text-zinc-800 font-bold mb-12 tracking-tight"
+      className="text-3xl text-center text-zinc-800 dark:text-white font-bold mb-12 tracking-tight"
     >
       {children}
     </motion.h1>
