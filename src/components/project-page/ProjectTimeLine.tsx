@@ -33,15 +33,15 @@ const ProjectTimeline: React.FC<Props> = ({ items }) => {
             <div className="absolute -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
             <div className="space-y-2">
               <div className="flex max-sm:flex-col sm:items-center gap-4">
-                <h3 className="text-lg font-medium text-gray-600">
+                <h3 className="text-lg font-medium text-gray-600 dark:duration-300 dark:text-gray-300">
                   {item.phase}
                 </h3>
-                <h4 className="text-lg font-medium">{item.title}</h4>
+                <h4 className="text-lg font-medium dark:duration-300 dark:text-white">{item.title}</h4>
                 <span className="text-sm text-gray-500 italic">
                   {item.period}
                 </span>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:duration-300 dark:text-gray-400 leading-relaxed">
                 {item.description}
               </p>
             </div>

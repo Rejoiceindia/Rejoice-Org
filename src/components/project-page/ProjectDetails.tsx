@@ -12,15 +12,15 @@ const ProjectDetails: React.FC<Props> = ({
   projectDetalsImage,
 }) => {
   const [image, setImage] = useState<string>(projectDetalsImage);
-  useEffect(() => {
-    import(`../assets/images/ai-assistant-demo.png`)
-      .then((image) => {
-        setImage(image.default);
-      })
-      .catch((error) => {
-        console.error("Error loading image:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   import(`../assets/images/ai-assistant-demo.png`)
+  //     .then((image) => {
+  //       setImage(image.default);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error loading image:", error);
+  //     });
+  // }, []);
   return (
     <div className="flex flex-col gap-8 p-10">
       <StyledHeading>MORE ABOUT THIS PROJECT</StyledHeading>
@@ -34,8 +34,8 @@ const ProjectDetails: React.FC<Props> = ({
           transition={{ delay: 0.2, duration: 0.4 }}
           className="w-1/2"
         >
-          <p className="text-gray-700 mb-4">{projectDetailsText[0]}</p>
-          <p className="text-gray-700">{projectDetailsText[1]}</p>
+          <p className="text-gray-700 dark:text-gray-300 dark:duration-300 mb-4">{projectDetailsText[0]}</p>
+          <p className="text-gray-700 dark:text-gray-300 dark:duration-300">{projectDetailsText[1]}</p>
         </motion.div>
 
         <motion.div

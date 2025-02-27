@@ -1,7 +1,7 @@
 
 const JoinCommunity = () => {
     return (
-        <div className="bg-[#4F67FF] text-white py-16 px-6 sm:px-8 rounded-2xl mx-4 sm:mx-8 my-12">
+        <div className="bg-[#4F67FF] text-white py-16 px-6 sm:px-8 rounded-2xl mx-4 sm:mx-8 mb-12 mt-20">
             
             <div className="max-w-3xl mx-auto text-center">
                 
@@ -20,7 +20,7 @@ const JoinCommunity = () => {
                     className="inline-block bg-gradient-to-b from-black to-[#1f1f2a] hover:from-[#1f1f2a] hover:to-black 
                     text-white font-semibold py-3 px-8 rounded-full 
                     transition-all duration-300 ease-in-out
-                    hover:shadow-lg hover:shadow-black/20 
+                    hover:shadow-lg hover:shadow-black 
                     transform hover:-translate-y-1 
                     hover:scale-103">
                         Become a Contributor !
