@@ -52,7 +52,6 @@ export const contributorList = [
             linkedin: 'https://www.linkedin.com/in/roshanalinarsindani'
         },
     },
-
     {
         name: "Aneesh Sharma",
         role: "Business Intelligence Engineer",
