@@ -1,6 +1,5 @@
-import { FaGithub } from "react-icons/fa"
-import { HiSun, HiMoon } from "react-icons/hi"
 import { useTheme } from "../../Context/ThemeContext"      
+import { GitHub, Moon, Sun } from "../assets/Icons"
 
 const Navbar = () => {
     const { theme, toggleTheme } = useTheme()
@@ -14,21 +13,24 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-4">
-                <button  className="p-2 rounded-full hover:bg-gray-100 duration-300 dark:hover:bg-[#0d0d0d] transition-colors"
-                    aria-label="Toggle theme" onClick={toggleTheme}>
-                        {theme === 'dark' ? (
-                            <HiSun className="w-6 h-6 text-white" />
-                        ) : (
-                            <HiMoon className="w-6 h-6 text-black" />
-                        )}
-                </button>
 
                 <a href="https://github.com/Rejoiceindia" 
                    target="_blank"
                    rel="noopener noreferrer"
-                   className="text-black p-2 rounded-full dark:text-white duration-300 hover:bg-gray-100 dark:hover:bg-[#0d0d0d] transition-colors">
-                        <FaGithub className="w-6 h-6" />
+                   className="flex items-center gap-2 px-3 text-sm text-black p-2 rounded-full dark:text-white duration-300 hover:bg-gray-100 dark:hover:bg-[#0d0d0d] transition-colors">
+                        Explore our Github
+                        <GitHub width='24px' height='24px' /> 
                 </a>
+
+                <button  className="p-2 rounded-full hover:bg-gray-100 duration-300 dark:hover:bg-[#0d0d0d] transition-colors"
+                    aria-label="Toggle theme" onClick={toggleTheme}>
+                        {theme === 'dark' ? (
+                            <Sun width='24px' height='24px' fill='white' />
+                        ) : (
+                            <Moon width='24px' height='24px' fill='black' />
+                        )}
+                </button>
+
             </div>
         </div>
     )

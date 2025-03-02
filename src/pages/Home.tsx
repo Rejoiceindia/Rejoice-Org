@@ -18,8 +18,8 @@ const Home = () => {
         </h1>
 
         <div className="project-cards flex flex-wrap justify-center mt-12 gap-8">
-            {ProjectDetails.map((project)=> (
-                <ProjectCard key={project.id} {...project}/>
+            {ProjectDetails.map((project, index) => (
+                <ProjectCard key={project.id} {...project} index={index}/>
             ))}
         </div>
 
