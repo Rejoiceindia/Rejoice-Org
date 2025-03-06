@@ -5,7 +5,7 @@ type Props = {};
 
 const IssueSection: React.FC<Props> = ({}) => {
   return (
-    <div className="w-[75%]  mx-auto rounded-2xl bg-gray-300 dark:bg-[#425af7] flex items-center justify-center py-14">
+    <div className="w-[90%] sm:w-[75%] mx-auto rounded-2xl bg-gray-300 dark:bg-[#425af7] flex items-center justify-center py-10 px-5 sm:py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,11 +15,11 @@ const IssueSection: React.FC<Props> = ({}) => {
           once: true,
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-zinc-800 dark:text-white mb-6">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-zinc-800 dark:text-white mb-6">
           HAVE AN ISSUE ?
         </h1>
 
-        <p className="text-zinc-800 dark:text-gray-300 text-lg mb-8 leading-relaxed">
+        <p className="text-zinc-800  dark:text-gray-300 text-sm sm:text-lg mb-8 leading-relaxed">
           If you’re encountering bugs or issues in the project, report them in
           our GitHub repository to help us resolve them quickly!
         </p>

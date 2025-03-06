@@ -1,13 +1,13 @@
 import React from "react";
 import StyledIcon from "./StyledIcon";
-import { Globe } from "../../assets/Icons";
 import { motion } from "framer-motion";
+import { Feature } from "../../../Data";
 
 type Props = {
-  gradient: string;
+  feature: Feature;
 };
 
-const FeatureCard: React.FC<Props> = ({ gradient }) => {
+const FeatureCard: React.FC<Props> = ({ feature }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,21 +16,17 @@ const FeatureCard: React.FC<Props> = ({ gradient }) => {
         once: true,
       }}
       transition={{ delay: 0.2, duration: 0.4 }}
-      className="relative flex pt-10 items-center justify-center rounded-xl bg-white neuromorphic"
+      className="relative flex pt-10 items-center justify-center rounded-[21px] bg-white shadow-[10px_10px_20px_#ebebeb,_-10px_-10px_20px_#ffffff] dark:rounded-[21px] dark:bg-zinc-800 dark:shadow-[10px_10px_20px_#141414,_-10px_-10px_20px_#000000]"
     >
-      <div className="flex items-center justify-center absolute -top-10 left-[25%] sm:left-[10%]">
-        <StyledIcon gradient={gradient}>
-          <Globe />
-        </StyledIcon>
+      <div className="flex items-center justify-center absolute -top-10 left-[37%] sm:left-[10%]">
+        <StyledIcon gradient={feature.gradient}>{feature.icon}</StyledIcon>
       </div>
       <div className="flex flex-col p-5 sm:p-7  gap-5">
-        <h2 className="text-lg sm:text-2xl max-sm:hidden font-medium text-slate-900">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <h2 className="text-lg sm:text-2xl max-sm:hidden font-medium text-slate-900 dark:text-slate-50">
+          {feature.title}
         </h2>
-        <div className="text-sm sm:text-base font-light text-slate-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum
-          corporis. Eaque facere deserunt alias odio asperiores nemo impedit
-          itaque perspiciatis accusantium quos.
+        <div className="text-sm text-center sm:text-left sm:text-base font-light text-slate-700 dark:text-slate-300">
+          {feature.description}
         </div>
       </div>
     </motion.div>

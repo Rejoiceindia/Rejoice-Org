@@ -14,7 +14,7 @@ type Props = {
 };
 const ProjectTimeline: React.FC<Props> = ({ items }) => {
   return (
-    <div className="max-w-4xl text-neutral-800 mx-auto px-4 py-12">
+    <div className="max-w-4xl  text-neutral-800 mx-auto px-4 py-12">
       <StyledHeading>PROJECT TIMELINE</StyledHeading>
 
       <div className="relative">
@@ -36,7 +36,9 @@ const ProjectTimeline: React.FC<Props> = ({ items }) => {
                 <h3 className="text-lg font-medium text-gray-600 dark:duration-300 dark:text-gray-300">
                   {item.phase}
                 </h3>
-                <h4 className="text-lg font-medium dark:duration-300 dark:text-white">{item.title}</h4>
+                <h4 className="text-lg font-medium dark:duration-300 dark:text-white">
+                  {item.title}
+                </h4>
                 <span className="text-sm text-gray-500 italic">
                   {item.period}
                 </span>

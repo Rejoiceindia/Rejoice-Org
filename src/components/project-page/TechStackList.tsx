@@ -10,7 +10,7 @@ const TechStackComponent: React.FC<Props> = () => {
   return (
     <div className="flex flex-col items-center gap-10">
       <StyledHeading>TECH STACK</StyledHeading>
-      <div className="grid grid-cols-4 gap-10 items-center justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 items-center justify-center">
         {list.map((item, index) => {
           return <TechStackItem key={index} />;
         })}

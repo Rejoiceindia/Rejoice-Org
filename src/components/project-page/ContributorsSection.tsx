@@ -2,15 +2,18 @@ import React, { useRef, useState } from "react";
 import ContributorCard from "./ui/ContributorCard";
 import { motion } from "framer-motion";
 import StyledHeading from "./ui/StyledHeading";
+import { Contributor } from "../../Data";
 
-type Props = {};
+type Props = {
+  contributorList: Contributor[];
+};
 
-const ContributorsSection: React.FC<Props> = ({}) => {
+const ContributorsSection: React.FC<Props> = ({ contributorList }) => {
   const [isDragging, setIsDragging] = useState(false);
   const constraintsRef = useRef<HTMLDivElement>(null);
   return (
     <div className="flex flex-col gap-10 items-center justify-center my-10">
-      <StyledHeading>PROJECT TIMELINE</StyledHeading>
+      <StyledHeading>MEET THE COMMUNITY</StyledHeading>
       <div className="w-4/5 mx-auto overflow-hidden" ref={constraintsRef}>
         <motion.div
           drag="x"
@@ -27,27 +30,20 @@ const ContributorsSection: React.FC<Props> = ({}) => {
           className="flex gap-5 py-10 cursor-grab active:cursor-grabbing"
           style={{ touchAction: "none" }}
         >
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
-          <div style={{ pointerEvents: isDragging ? "none" : "auto" }}>
-            <ContributorCard name="John Doe" position="Web Developer" />
-          </div>
+          {contributorList.map((item, index) => {
+            return (
+              <div
+                key={index}
+                style={{ pointerEvents: isDragging ? "none" : "auto" }}
+              >
+                <ContributorCard
+                  name={item.name}
+                  position={item.role}
+                  socialLinks={item.socialLinks}
+                />
+              </div>
+            );
+          })}
         </motion.div>
       </div>
     </div>
