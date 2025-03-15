@@ -51,7 +51,7 @@ const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
           once: true,
         }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="flex w-3/5 mx-auto items-center justify-between"
+        className="flex w-3/5 mx-auto flex-col sm:flex-row items-center justify-between"
       >
         {Stats.map((stat, index) => {
           return (
