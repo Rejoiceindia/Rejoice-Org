@@ -1,19 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
+type Props = {
+  icon: React.ReactNode;
+  name: string;
+};
 
-const TechStackItem: React.FC<Props> = ({}) => {
+const TechStackItem: React.FC<Props> = ({ icon, name }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 0.3 }}
-      viewport={{
-        once: true,
-      }}
-      className="bg-zinc-700 w-28 h-28 rounded-2xl mx-2"
-    ></motion.div>
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center justify-center p-6 bg-[#121212] border border-[#2a2a2a] rounded-lg hover:border-gray-500 transition-all duration-300"
+    >
+      <div className="text-white mb-3">{icon}</div>
+      <p className="text-white text-center">{name}</p>
+    </motion.div>
   );
 };
 

@@ -1,3 +1,6 @@
+import GRPC from "../../../public/images/grpc.png";
+import Surreal from "../../../public/images/surreal.png";
+
 export const GitHub = ({ size = 44, color = "currentColor", ...props }) => (
   <svg
     width={size}
@@ -185,148 +188,317 @@ export const Plug = ({ size = 44, color = "currentColor", ...props }) => (
   </svg>
 );
 
-export const GithubLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
+export const GithubLiner = ({
+  size = 44,
+  color = "currentColor",
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
     fill={color}
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-   {...props}>
+    {...props}
+  >
     <path d="M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21h6Z"></path>
-  <path d="M9 19c-4.3 1.4-4.3-2.5-6-3"></path>
-</svg>
+    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3"></path>
+  </svg>
 );
 
-export const DocumentLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
+export const DocumentLiner = ({
+  size = 44,
+  color = "currentColor",
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
     fill={color}
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}>
-  <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-  <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"></path>
-  <path d="M9 9h1"></path>
-  <path d="M9 13h6"></path>
-  <path d="M9 17h6"></path>
-</svg>
+    {...props}
+  >
+    <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+    <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"></path>
+    <path d="M9 9h1"></path>
+    <path d="M9 13h6"></path>
+    <path d="M9 17h6"></path>
+  </svg>
 );
 
 export const CodeLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
+  <svg
+    width={size}
+    height={size}
     fill={color}
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}>
-  <path d="m7 8-4 4 4 4"></path>
-  <path d="m17 8 4 4-4 4"></path>
-  <path d="m14 4-4 16"></path>
-</svg>
+    {...props}
+  >
+    <path d="m7 8-4 4 4 4"></path>
+    <path d="m17 8 4 4-4 4"></path>
+    <path d="m14 4-4 16"></path>
+  </svg>
 );
 
-export const SolutionLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+export const SolutionLiner = ({
+  size = 44,
+  color = "currentColor",
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+    />
   </svg>
 );
 
 export const GlobeLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h.5A2.5 2.5 0 0020 5.5v-1.5" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h.5A2.5 2.5 0 0020 5.5v-1.5"
+    />
   </svg>
 );
 
-export const LocationLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    fill={color} 
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
-    xmlns="http://www.w3.org/2000/svg" 
-    {...props}>
+export const LocationLiner = ({
+  size = 44,
+  color = "currentColor",
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
+    fill={color}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
     <path d="M12 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
     <path d="M17.657 16.657 13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0v0Z"></path>
   </svg>
 );
 
 export const PhoneLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    fill={color} 
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
-    xmlns="http://www.w3.org/2000/svg" 
-    {...props}>
+  <svg
+    width={size}
+    height={size}
+    fill={color}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
     <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path>
   </svg>
 );
 
 export const MailLiner = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    fill={color} 
-    stroke="currentColor" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
-    stroke-width="2" 
-    viewBox="0 0 24 24" 
-    xmlns="http://www.w3.org/2000/svg" 
-    {...props}>
+  <svg
+    width={size}
+    height={size}
+    fill={color}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
     <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"></path>
     <path d="m3 7 9 6 9-6"></path>
   </svg>
-
 );
 
-
 export const Rocket = ({ size = 44, color = "currentColor", ...props }) => (
-  <svg 
-    width={size} 
-    height={size} 
+  <svg
+    width={size}
+    height={size}
     fill={color}
-    viewBox="0 0 24 24" 
-    xmlns="http://www.w3.org/2000/svg" 
-    {...props}>
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
     <path d="M9.71 18.567a6.692 6.692 0 0 1-.664.772c-1.172 1.171-2.94 1.525-5.303 1.06-.465-2.363-.111-4.131 1.06-5.303.247-.247.506-.468.772-.663a8.975 8.975 0 0 0-2.6-.81 5.977 5.977 0 0 1 1.475-2.416 5.977 5.977 0 0 1 3.81-1.742 13.637 13.637 0 0 1 2.2-2.854c3.32-3.32 7.593-4.428 9.546-2.475 1.953 1.953.845 6.227-2.475 9.546a13.67 13.67 0 0 1-2.854 2.2 5.977 5.977 0 0 1-1.742 3.81 5.96 5.96 0 0 1-2.416 1.474 8.975 8.975 0 0 0-.81-2.599ZM15.762 8.38a1 1 0 1 0 1.414-1.415 1 1 0 0 0-1.414 1.415Zm-7.778 7.778c-.11-.11-.286-.277-.53-.503-.432.15-.944.574-1.414 1.033-.371.363-.497.973-.5 1.92.946-.004 1.62-.22 1.914-.506.47-.459.89-.917 1.04-1.35-.112-.194-.346-.43-.51-.594Z"></path>
   </svg>
 );
 
+export const People = ({
+  size = 46,
+  strokeWidth = 1.5,
+  color = "#ffffff",
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
+    fill="none"
+    stroke={color}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={strokeWidth}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M18.844 7.875c-.138 1.906-1.552 3.375-3.094 3.375-1.542 0-2.959-1.468-3.094-3.375-.14-1.983 1.236-3.375 3.094-3.375 1.858 0 3.235 1.428 3.094 3.375Z" />
+    <path d="M15.75 14.25c-3.055 0-5.993 1.517-6.729 4.472-.097.391.148.778.55.778h12.358c.402 0 .646-.387.55-.778-.736-3.002-3.674-4.472-6.73-4.472Z" />
+    <path d="M9.375 8.716c-.11 1.522-1.253 2.722-2.484 2.722-1.232 0-2.377-1.2-2.485-2.722C4.294 7.132 5.406 6 6.891 6c1.484 0 2.596 1.161 2.484 2.716Z" />
+    <path d="M9.657 14.341c-.846-.387-1.778-.536-2.766-.536-2.437 0-4.786 1.211-5.374 3.572-.077.312.118.62.44.62h5.262" />
+  </svg>
+);
 
+export const GitBranch = ({
+  size = 46,
+  strokeWidth = 1.5,
+  color = "#ffffff",
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
+    fill="none"
+    stroke={color}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={strokeWidth}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M7.5 6.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
+    <path d="M7.5 21.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
+    <path d="M7.5 17.25V6.75" />
+    <path d="M16.5 9.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
+    <path d="M16.5 9.75c0 6-9 2.25-9 7.5" />
+  </svg>
+);
 
+export const Star = ({ size = 46, color = "#ffffff", ...props }) => (
+  <svg
+    width={size}
+    height={size}
+    fill={color}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M18.469 22.5a.75.75 0 0 1-.44-.14L12 17.99l-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965-6.093-4.178A.75.75 0 0 1 1.5 9h7.518l2.268-6.981a.75.75 0 0 1 1.427 0l2.27 6.984H22.5a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99Z" />
+  </svg>
+);
 
+export const ReactLogo = ({ size = 46, color = "#ffffff", ...props }) => (
+  <svg
+    width={size}
+    height={size}
+    fill={color}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M19.25 8.471a16.35 16.35 0 0 0-.724-.228c.04-.165.077-.33.111-.495.549-2.668.19-4.816-1.034-5.524-1.172-.678-3.094.029-5.033 1.72-.19.167-.377.339-.56.516a10.989 10.989 0 0 0-.375-.345c-2.032-1.809-4.068-2.57-5.29-1.86-1.173.68-1.521 2.7-1.027 5.227.049.25.104.5.166.747-.288.082-.567.17-.833.262C2.27 9.323.75 10.628.75 11.981c0 1.398 1.633 2.8 4.114 3.65.201.067.405.131.61.19a13.96 13.96 0 0 0-.177.805c-.469 2.484-.103 4.456 1.066 5.132 1.208.698 3.235-.02 5.21-1.749.156-.137.313-.281.469-.433.197.19.4.376.61.555 1.912 1.65 3.8 2.316 4.968 1.638 1.207-.7 1.6-2.82 1.09-5.397-.04-.197-.084-.398-.135-.603.142-.042.282-.085.418-.13 2.578-.857 4.258-2.242 4.258-3.657-.001-1.36-1.571-2.672-4.001-3.51Zm-6.047-3.8c1.66-1.45 3.213-2.021 3.92-1.612.754.435 1.047 2.191.574 4.494-.031.15-.065.3-.101.449a22.866 22.866 0 0 0-3.009-.477 22.557 22.557 0 0 0-1.902-2.379c.168-.163.34-.321.517-.475Zm-5.81 8.466a28.373 28.373 0 0 0 1.345 2.325 20.406 20.406 0 0 1-2.074-.334 21.53 21.53 0 0 1 .73-1.991Zm0-2.266c-.28-.665-.519-1.32-.714-1.951a21.6 21.6 0 0 1 2.04-.35 27.81 27.81 0 0 0-1.327 2.301h.002Zm.512 1.133a27.347 27.347 0 0 1 2.048-3.558 27.226 27.226 0 0 1 4.101 0c.382.566.743 1.144 1.084 1.735.341.59.665 1.194.97 1.81-.301.62-.624 1.228-.967 1.825-.341.593-.7 1.175-1.079 1.745-.667.047-1.359.073-2.062.073-.703 0-1.381-.022-2.037-.065a27.26 27.26 0 0 1-2.06-3.565h.002Zm8.068 2.293c.226-.393.444-.792.652-1.195.286.648.538 1.31.756 1.984-.693.156-1.394.276-2.1.358.238-.377.469-.76.692-1.147Zm.643-3.425a31.326 31.326 0 0 0-.648-1.172c-.218-.38-.446-.757-.684-1.128.718.091 1.407.212 2.052.36a20.612 20.612 0 0 1-.72 1.94ZM12.01 5.835c.468.512.91 1.046 1.324 1.602a27.967 27.967 0 0 0-2.66 0 21.25 21.25 0 0 1 1.336-1.602ZM6.828 3.087C7.58 2.65 9.245 3.275 11 4.834c.112.1.225.205.337.313-.69.749-1.33 1.543-1.915 2.377-1.01.091-2.013.248-3.003.469-.057-.23-.109-.462-.155-.695-.424-2.167-.143-3.8.564-4.21ZM5.73 14.893a11.199 11.199 0 0 1-.555-.174c-1.097-.375-2.003-.865-2.625-1.397-.557-.478-.84-.955-.84-1.341 0-.82 1.223-1.868 3.26-2.578.256-.09.514-.17.774-.245.303.973.669 1.924 1.097 2.848a23.548 23.548 0 0 0-1.11 2.887Zm5.21 4.39c-.874.765-1.748 1.308-2.52 1.581-.692.245-1.244.252-1.577.06-.71-.41-1.005-1.994-.603-4.119.048-.25.103-.5.165-.75 1 .216 2.012.363 3.032.44a23.44 23.44 0 0 0 1.931 2.391c-.14.137-.283.27-.428.398Zm1.098-1.088a21.601 21.601 0 0 1-1.354-1.624 33.598 33.598 0 0 0 2.675-.004 20.6 20.6 0 0 1-1.322 1.628Zm5.836 1.34c-.134.724-.403 1.207-.736 1.4-.71.412-2.226-.123-3.861-1.534a15.464 15.464 0 0 1-.566-.515 22.714 22.714 0 0 0 1.886-2.4 22.375 22.375 0 0 0 3.047-.472c.046.186.086.368.122.546.225 1.14.257 2.17.108 2.975Zm.816-4.811c-.123.04-.25.08-.378.119a22.658 22.658 0 0 0-1.14-2.857c.428-.913.794-1.854 1.096-2.815.23.067.453.137.669.212 2.082.718 3.352 1.78 3.352 2.598 0 .872-1.372 2.003-3.599 2.743Z" />
+    <path d="M12 13.992a2.016 2.016 0 1 0 .012-4.03 2.016 2.016 0 0 0-.013 4.03Z" />
+  </svg>
+);
 
+export const Wasm = ({ size = 46, color = "#ffffff", ...props }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} {...props}>
+    <path
+      fill="#654ff0"
+      d="M376 0v3.3c0 38.76-31.42 70.17-70.17 70.17-38.76 0-70.17-31.42-70.17-70.17V0H0v612h612V0z"
+    />
+    <path
+      fill="#fff"
+      d="M142.16 329.81h40.56l27.69 147.47h.5l33.28-147.47h37.94l30.06 149.28h.59l31.56-149.28h39.78L332.43 546.5h-40.25l-29.81-147.47h-.78L229.68 546.5h-41zm287.69 0h63.94l63.5 216.69h-41.84l-13.81-48.22H428.8l-10.66 48.22h-40.75zm24.34 53.41-17.69 79.5h55.06l-20.31-79.5z"
+    />
+  </svg>
+);
 
+export const Grpc = ({ size = 46 }) => (
+  <div>
+    <img src={GRPC} alt="" />
+  </div>
+);
 
+export const SurrealDB = ({ size = 46 }) => {
+  <div>
+    <img src={Surreal} alt="" />
+  </div>;
+};
 
-
-
-
-
-
-
+export const SvgComponent = ({ size = 46, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+    id="Layer_1"
+    x={0}
+    y={0}
+    width={size}
+    height={size}
+    viewBox="0 0 254.5 225"
+    {...props}
+  >
+    <style>{".st4{fill:#00acd7}"}</style>
+    <path
+      d="M40.2 101.1c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h35.7c.4 0 .5.3.3.6l-1.7 2.6c-.2.3-.7.6-1 .6l-36.2-.1zM25.1 110.3c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h45.6c.4 0 .6.3.5.6l-.8 2.4c-.1.4-.5.6-.9.6l-47.3.1zM49.3 119.5c-.4 0-.5-.3-.3-.6l1.4-2.5c.2-.3.6-.6 1-.6h20c.4 0 .6.3.6.7l-.2 2.4c0 .4-.4.7-.7.7l-21.8-.1z"
+      className="st4"
+    />
+    <g id="CXHf1q_3_">
+      <path
+        d="M153.1 99.3c-6.3 1.6-10.6 2.8-16.8 4.4-1.5.4-1.6.5-2.9-1-1.5-1.7-2.6-2.8-4.7-3.8-6.3-3.1-12.4-2.2-18.1 1.5-6.8 4.4-10.3 10.9-10.2 19 .1 8 5.6 14.6 13.5 15.7 6.8.9 12.5-1.5 17-6.6.9-1.1 1.7-2.3 2.7-3.7h-19.3c-2.1 0-2.6-1.3-1.9-3 1.3-3.1 3.7-8.3 5.1-10.9.3-.6 1-1.6 2.5-1.6h36.4c-.2 2.7-.2 5.4-.6 8.1-1.1 7.2-3.8 13.8-8.2 19.6-7.2 9.5-16.6 15.4-28.5 17-9.8 1.3-18.9-.6-26.9-6.6-7.4-5.6-11.6-13-12.7-22.2-1.3-10.9 1.9-20.7 8.5-29.3 7.1-9.3 16.5-15.2 28-17.3 9.4-1.7 18.4-.6 26.5 4.9 5.3 3.5 9.1 8.3 11.6 14.1.6.9.2 1.4-1 1.7z"
+        className="st4"
+      />
+      <path
+        d="M186.2 154.6c-9.1-.2-17.4-2.8-24.4-8.8-5.9-5.1-9.6-11.6-10.8-19.3-1.8-11.3 1.3-21.3 8.1-30.2 7.3-9.6 16.1-14.6 28-16.7 10.2-1.8 19.8-.8 28.5 5.1 7.9 5.4 12.8 12.7 14.1 22.3 1.7 13.5-2.2 24.5-11.5 33.9-6.6 6.7-14.7 10.9-24 12.8-2.7.5-5.4.6-8 .9zm23.8-40.4c-.1-1.3-.1-2.3-.3-3.3-1.8-9.9-10.9-15.5-20.4-13.3-9.3 2.1-15.3 8-17.5 17.4-1.8 7.8 2 15.7 9.2 18.9 5.5 2.4 11 2.1 16.3-.6 7.9-4.1 12.2-10.5 12.7-19.1z"
+        className="st4"
+      />
+    </g>
+  </svg>
+);

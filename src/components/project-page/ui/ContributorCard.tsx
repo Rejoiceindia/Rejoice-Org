@@ -27,7 +27,6 @@ const ContributorCard: React.FC<Props> = ({
   const githubUsername = socialLinks?.github
     ? socialLinks?.github.split("/").pop()
     : "";
-  console.log(githubUsername);
 
   useEffect(() => {
     if (githubUsername && !profilePicUrl) {
@@ -38,7 +37,10 @@ const ContributorCard: React.FC<Props> = ({
           );
           const data = await response.json();
           if (data.avatar_url) {
+            console.log(data.avatar_url);
+
             setGitHubProfilePic(data.avatar_url);
+            console.log(gitHubProfilePic);
           }
         } catch (error) {
           console.error("Error fetching GitHub profile:", error);
@@ -48,65 +50,62 @@ const ContributorCard: React.FC<Props> = ({
       fetchGitHubProfilePic();
     }
   }, [githubUsername, profilePicUrl]);
+
   return (
-    <div className="w-52 min-h-40 h-40 flex items-center justify-center rounded-4xl bg-white dark:bg-zinc-700 py-6">
-      <div className="w-full flex flex-col gap-2 -mt-14 items-center justify-center px-10">
-        <div>
-          {profilePicUrl || gitHubProfilePic ? (
-            <img
-              src={profilePicUrl || gitHubProfilePic}
-              alt="profile-pic"
-              className="w-14 h-14 rounded-full object-cover"
-            />
-          ) : (
-            <div className="w-14 h-14 rounded-full bg-indigo-500" />
-          )}
-        </div>
-        <div className="text-[16px] text-zinc-800 dark:text-zinc-100 text-center">
-          {name}
-        </div>
-        <div className="text-gray-500 text-sm dark:text-gray-400 text-center">
-          {position}
-        </div>
-        <div className="flex items-center justify-center gap-2">
-          {socialLinks?.github && (
+    <div
+      className={`w-full max-w-[250px] bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg p-6 flex flex-col items-center transition-all duration-300 hover:border-gray-500`}
+    >
+      {/* Profile Image */}
+      <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#2a2a2a]">
+        <img
+          src={
+            gitHubProfilePic ||
+            `https://placehold.co/200x200/333/FFF?text=${name.charAt(0)}`
+          }
+          alt={name}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Name and Position */}
+      <h3 className="text-white text-lg font-medium mb-1">{name}</h3>
+      <p className="text-gray-400 text-sm mb-4">{position}</p>
+
+      {/* Social Links */}
+      {socialLinks && (
+        <div className="flex gap-3 mt-2">
+          {socialLinks.github && (
             <a
               href={socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="text-gray-400 hover:text-white transition-colors"
             >
-              <GitHub color={theme === "light" ? "black" : "white"} size={20} />
+              <GitHub className="w-5 h-5" />
             </a>
           )}
-          {socialLinks?.twitter && (
+          {socialLinks.linkedin && (
             <a
-              href={socialLinks?.twitter}
+              href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="text-gray-400 hover:text-white transition-colors"
             >
-              <Twitter
-                color={theme === "light" ? "black" : "white"}
-                size={20}
-              />
+              <Linkedin className="w-5 h-5" />
             </a>
           )}
-          {socialLinks?.linkedin && (
+          {socialLinks.twitter && (
             <a
-              href={socialLinks?.linkedin}
+              href={socialLinks.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="text-gray-400 hover:text-white transition-colors"
             >
-              <Linkedin
-                color={theme === "light" ? "black" : "white"}
-                size={20}
-              />
+              <Twitter className="w-5 h-5" />
             </a>
           )}
         </div>
-      </div>
+      )}
     </div>
   );
 };

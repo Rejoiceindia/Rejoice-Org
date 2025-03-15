@@ -2,10 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 type Props = {
+  textAlign?:
+    | "start"
+    | "end"
+    | "left"
+    | "right"
+    | "center"
+    | "justify"
+    | "match-parent";
   children: React.ReactNode;
 };
 
-const StyledHeading: React.FC<Props> = ({ children }) => {
+const StyledHeading: React.FC<Props> = ({ textAlign = "center", children }) => {
   return (
     <motion.h1
       initial={{ opacity: 0 }}
@@ -14,7 +22,8 @@ const StyledHeading: React.FC<Props> = ({ children }) => {
       viewport={{
         once: true,
       }}
-      className="text-3xl text-center text-zinc-800 dark:text-white font-bold mb-12 tracking-tight"
+      style={{ textAlign: textAlign }}
+      className="text-3xl w-3/5 mx-auto text-zinc-800 dark:text-white font-bold mb-12 tracking-tight"
     >
       {children}
     </motion.h1>

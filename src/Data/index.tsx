@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 import { Devices, Globe, Plug, Tools } from "../components/assets/Icons";
+import { MdEmail } from "react-icons/md";
+import { BiKey } from "react-icons/bi";
 
 export const projectData = {
   projectName: "Advaiya",
@@ -77,6 +79,20 @@ export const featureList: Feature[] = [
     description:
       "Easily add your own API and integrate Local Large Language Models (LLM), Small Language Models (SLM), or Vision Language Models (VLM) to tailor the assistant’s capabilities.",
     icon: <Plug />,
+    gradient: "bg-gradient-to-br from-[#D14B60] to-[#9C27B0]",
+  },
+  {
+    title: "Email-First Interaction: Your Inbox, Your Command Center",
+    description:
+      "Advaiya transforms your email into a dynamic user interface. Interact, command, and manage tasks directly from your inbox, eliminating app fatigue and streamlining workflows",
+    icon: <MdEmail size={40} />,
+    gradient: "bg-gradient-to-br from-[#D14B60] to-[#9C27B0]",
+  },
+  {
+    title: "One-Time Identity: Secure, Lifelong Access",
+    description:
+      "Thanks to Email-First Interaction, once your email is added to the system you gain lifetime access to Advaiya, freeing you from cumbersome logins and passwords.",
+    icon: <BiKey size={40} />,
     gradient: "bg-gradient-to-br from-[#D14B60] to-[#9C27B0]",
   },
 ];
