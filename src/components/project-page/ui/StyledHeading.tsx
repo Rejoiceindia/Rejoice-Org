@@ -23,7 +23,7 @@ const StyledHeading: React.FC<Props> = ({ textAlign = "center", children }) => {
         once: true,
       }}
       style={{ textAlign: textAlign }}
-      className="text-3xl w-3/5 mx-auto text-zinc-800 dark:text-white font-bold mb-12 tracking-tight"
+      className="text-3xl w-11/12 sm:w-3/5 mx-auto text-zinc-800 dark:text-white font-bold mb-12 tracking-tight"
     >
       {children}
     </motion.h1>

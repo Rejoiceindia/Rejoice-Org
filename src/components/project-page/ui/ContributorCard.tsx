@@ -53,7 +53,7 @@ const ContributorCard: React.FC<Props> = ({
 
   return (
     <div
-      className={`w-full max-w-[250px] bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg p-6 flex flex-col items-center transition-all duration-300 hover:border-gray-500`}
+      className={`w-full  max-w-[250px] bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-gray-500`}
     >
       {/* Profile Image */}
       <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#2a2a2a]">

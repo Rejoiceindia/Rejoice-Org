@@ -27,7 +27,7 @@ const Stats = [
 
 const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
   return (
-    <div className="flex  flex-col gap-8 p-10">
+    <div className="flex flex-col gap-8 sm:p-10">
       <StyledHeading textAlign="left">MORE ABOUT THIS PROJECT</StyledHeading>
       <div className="flex gap-5 flex-col sm:flex-row">
         <motion.div
@@ -37,7 +37,7 @@ const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
             once: true,
           }}
           transition={{ delay: 0.2, duration: 0.4 }}
-          className="flex flex-col w-3/5 mx-auto text-left items-center justify-center"
+          className="flex flex-col w-11/12 sm:w-3/5 mx-auto text-left items-center justify-center"
         >
           <p className="text-gray-700 dark:text-gray-300 dark:duration-300 mb-4">
             {projectDetailsText[0]}
@@ -51,11 +51,14 @@ const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
           once: true,
         }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="flex w-3/5 mx-auto flex-col sm:flex-row items-center justify-between"
+        className="w-11/12 sm:w-3/5 mx-auto grid grid-cols-2 sm:grid-cols-3"
       >
         {Stats.map((stat, index) => {
           return (
-            <div key={index} className="flex items-center justify-center gap-4">
+            <div
+              key={index}
+              className="flex items-start sm:items-center justify-center gap-4"
+            >
               {stat.icon}
               <div className="flex flex-col gap-2 items-start justify-center">
                 <h3 className="text-base text-white">{stat.title}</h3>
