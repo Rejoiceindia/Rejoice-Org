@@ -12,9 +12,12 @@ interface TimelineItem {
 type Props = {
   items: TimelineItem[];
 };
+
 const ProjectTimeline: React.FC<Props> = ({ items }) => {
+  const currentPhase = 0;
+
   return (
-    <div className="max-w-4xl  text-neutral-800 mx-auto px-4 py-12">
+    <div className="max-w-4xl text-neutral-800 mx-auto px-4 py-12">
       <StyledHeading>PROJECT TIMELINE</StyledHeading>
 
       <div className="relative">
@@ -28,9 +31,16 @@ const ProjectTimeline: React.FC<Props> = ({ items }) => {
               once: true,
             }}
             transition={{ delay: index * 0.2, duration: 0.4 }}
-            className="relative mb-12 last:mb-0 ml-12"
+            className={`relative mb-12 last:mb-0 ml-12 ${
+              index > currentPhase ? "blurred" : ""
+            }`}
           >
-            <div className="absolute -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
+            {index === currentPhase ? (
+              <div className="absolute ring-2 ring-green-500 -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
+            ) : (
+              <div className="absolute -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
+            )}
+
             <div className="space-y-2">
               <div className="flex max-sm:flex-col sm:items-center gap-4">
                 <h3 className="text-lg font-medium text-gray-600 dark:duration-300 dark:text-gray-300">

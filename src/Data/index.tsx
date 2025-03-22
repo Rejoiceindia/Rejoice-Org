@@ -16,31 +16,32 @@ export const projectData = {
   projectTimelineData: [
     {
       phase: "Phase 1",
-      title: "Conceptualization & Research",
+      title: "Design & Architecture",
       period: "Q1 2024 - Q2 2024",
       description:
-        "Identifying the core challenges in real estate business operations. Defining the project scope and building the foundational knowledge base. Conducting user research to understand market needs and pain points.",
+        "The project is in the architectural design phase, focusing on creating building layouts, refining design concepts, and ensuring functionality and compliance with regulations.",
     },
+
     {
       phase: "Phase 2",
       title: "Development & Prototyping",
       period: "Q3 2024 - Q4 2024",
       description:
-        "Building the initial prototype and testing core features. Integrating AI-driven automation tools for real estate management. Collecting feedback from early adopters and refining the product.",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
     },
     {
       phase: "Phase 3",
       title: "Conceptualization & Research",
       period: "Q1 2025",
       description:
-        "Launching the beta version of Adytia to a select group of users. Introducing new features, including automated property management and transaction tracking. Gathering user feedback to optimize the platform for broader use.",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
     },
     {
       phase: "Phase 4",
       title: "Conceptualization & Research",
       period: "Q3 2024 - Q4 2024",
       description:
-        "Full public release of Adytia with enhanced features and custom AI solutions. Expanded integrations with real estate CRM tools and third-party platforms. Marketing campaigns and outreach to real estate professionals.",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
     },
   ],
 };
