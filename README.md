@@ -43,8 +43,8 @@ Make sure you have the following tools installed:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/{your-username}/rejoiceindia-community-site.git
-cd rejoiceindia-community-site
+git clone https://github.com/Rejoiceindia/Rejoice-Org.git
+cd Rejoice-Org
 ```
 
 ### Install Dependencies
