@@ -1,5 +1,3 @@
-Here is a `README.md` file tailored for your project:
-
 # RejoiceIndia Community Website
 
 Welcome to the **RejoiceIndia** community site! This platform serves as a hub for our community's efforts in implementing technology in real estate. The website provides an overview of the community and details about ongoing projects. The site is built using **React**, **Vite**, and **TypeScript** to ensure a fast and modern web experience.
