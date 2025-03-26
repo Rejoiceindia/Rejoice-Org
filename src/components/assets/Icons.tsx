@@ -461,17 +461,17 @@ export const Wasm = ({ size = 46, color = "#ffffff", ...props }) => (
   </svg>
 );
 
-export const Grpc = ({ size = 46 }) => (
+export const Grpc = () => (
   <div>
     <img src={GRPC} alt="" />
   </div>
 );
 
-export const SurrealDB = ({ size = 46 }) => {
+export const SurrealDB = () => (
   <div>
     <img src={Surreal} alt="" />
-  </div>;
-};
+  </div>
+);
 
 export const SvgComponent = ({ size = 46, ...props }) => (
   <svg
