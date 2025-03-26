@@ -66,16 +66,6 @@ npm run dev
 
 This will start the development server on [http://localhost:3000](http://localhost:3000) by default. You can open this URL in your browser to view the site.
 
-### Build for Production
-
-To create a production build of the site, use the following command:
-
-```bash
-npm run build
-```
-
-This will generate an optimized, production-ready version of the site in the `dist/` folder.
-
 ## Contributing
 
 We welcome contributions from everyone! If you'd like to contribute, please follow these steps:
