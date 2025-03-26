@@ -11,7 +11,7 @@ const Tagline2: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                REJOICE INDIA
+                REJOICE INDIA PROPTECH
             </motion.p>
             
             <motion.h1 

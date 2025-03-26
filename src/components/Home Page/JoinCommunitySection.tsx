@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Button } from './Button';
 
 const JoinCommunitySection: React.FC = () => {
   return (
-    <section id="community-section" className="w-full bg-gradient-to-t from-black from-10% to-[#0f0f0f] py-20 px-4">
+    <section id="community-section" className="w-full bg-gradient-to-t from-black from-10% to-gray-800/30 py-20 px-4">
       <motion.div 
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0 }}
@@ -35,24 +36,7 @@ const JoinCommunitySection: React.FC = () => {
         </motion.p>
         
         {/* Button */}
-        <motion.div 
-          className="flex justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <a 
-            href="https://github.com/Rejoiceindia" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-b from-[#017f33] to-[#00FF66] hover:from-[#00FF66] hover:to-[#005923] text-black font-semibold py-3 px-8 rounded-xl transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-gray-950  transform hover:-translate-y-1  hover:scale-103"
-          >
-            Join Our Community
-          </a>
-        </motion.div>
+        <Button text='Join our Community' link='https://docs.google.com/forms/d/e/1FAIpQLSf4G49XBblnjd5u6iz5H--mwaGrinFEy58nrHe12MjeN0JeUw/viewform' />
       </motion.div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar2 from './Navbar2'
-import Tagline2 from './Tagline2'
+import Navbar2 from './Navbar'
+import Tagline2 from './Tagline'
 import Features from './Features'
 import { motion } from 'framer-motion'
 

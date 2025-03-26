@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectDetailsType> = ({
     <>
       <motion.div
         id="project-section"
-        className="bg-[#0F1118] hover:shadow-lg hover:shadow-gray-900 rounded-xl overflow-hidden shadow-lg duration-300 border border-gray-800"
+        className="bg-[#0d0d0d] hover:shadow-lg hover:shadow-gray-800/30 rounded-xl overflow-hidden shadow-lg duration-300 border border-slate-900"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectDetailsType> = ({
           />
 
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1118] via-[#0F1118]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/70 to-transparent"></div>
 
           {/* Project name */}
           <motion.div
@@ -84,7 +84,7 @@ const ProjectCard: React.FC<ProjectDetailsType> = ({
           >
             {techStack.map((tech) => (
               <motion.span
-                className="inline-block bg-[#1A1A2E] text-gray-300 text-xs px-3 py-1 rounded-full mr-2 mb-2"
+                className="inline-block bg-[#000000]/60 text-gray-300 text-xs px-3 py-1 rounded-full mr-2 mb-2"
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -157,7 +157,7 @@ const ProjectCard: React.FC<ProjectDetailsType> = ({
                 href={links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1 px-3 py-1.5 rounded-md bg-[#1A1A2E] text-white text-xs font-medium hover:bg-[#252540] transition-colors"
+                className="flex items-center justify-center gap-1 px-3 py-1.5 rounded-md bg-black/60 text-white text-xs font-medium hover:bg-[#252540] transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -168,7 +168,7 @@ const ProjectCard: React.FC<ProjectDetailsType> = ({
                 href={links.documentation}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1 px-3 py-1.5 rounded-md bg-[#1A1A2E] text-white text-xs font-medium hover:bg-[#252540] transition-colors"
+                className="flex items-center justify-center gap-1 px-3 py-1.5 rounded-md bg-black/60 text-white text-xs font-medium hover:bg-[#252540] transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -303,7 +303,7 @@ const ProjectSection: React.FC = () => {
 
           {/* Coming soon project */}
           <motion.div
-            className="bg-[#0F1118] hover:bg-[#0F1118]/50 duration-300 rounded-xl border border-gray-800 hover:shadow-lg hover:shadow-gray-900 p-8 flex flex-col items-center justify-center text-center"
+            className="bg-[#0d0d0d] hover:bg-[#0d0d0d]/60 duration-300 rounded-xl border border-gray-800 hover:shadow-lg hover:shadow-gray-800/30 p-8 flex flex-col items-center justify-center text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}

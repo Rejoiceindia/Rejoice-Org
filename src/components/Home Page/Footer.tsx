@@ -71,7 +71,7 @@ const Footer2: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Rejoice India
+              Rejoice India Proptech
             </motion.h3>
             <motion.p 
               className="text-gray-400 text-sm mb-4"
@@ -97,7 +97,7 @@ const Footer2: React.FC = () => {
                 transition={{ duration: 0.2 }}
               >
                 <FiMapPin className="mr-2 text-[#00FF66]" />
-                <span>123 Tech Park, Mumbai, India 560001</span>
+                <span>39/3, Oshiwara Andheri West, Mumbai, Maharashtra</span>
               </motion.div>
               <motion.div 
                 className="flex items-center mb-2"
@@ -106,7 +106,7 @@ const Footer2: React.FC = () => {
               >
                 <FiPhone className="mr-2 text-[#00FF66]" />
                 <a href="tel:+919876543210" className="hover:text-[#00FF66] transition-colors duration-200">
-                  +91 9876 543 210
+                +91 7021 766 299
                 </a>
               </motion.div>
               <motion.div 
@@ -116,7 +116,7 @@ const Footer2: React.FC = () => {
               >
                 <FiMail className="mr-2 text-[#00FF66]" />
                 <a href="mailto:contact@rejoiceindia.com" className="hover:text-[#00FF66] transition-colors duration-200">
-                  contact@rejoiceindia.com
+                  prashant.rejoice@gmail.com
                 </a>
               </motion.div>
             </motion.div>
