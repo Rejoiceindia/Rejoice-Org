@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BsArrowLeft } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import advaiya2 from  '../assets/images/advaiya2.jpg'
 
 type Props = {
   projectName: string;
@@ -57,7 +58,7 @@ const HeroSection: React.FC<Props> = ({
             className="w-full lg:w-1/2 flex justify-center lg:justify-end pt-6 lg:pt-0"
           >
             <motion.img 
-              src="/images/advaiya.png"
+              src={advaiya2}
               alt="Advaiya"
               className="w-full max-w-[250px] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain shadow-lg shadow-black"
               whileHover={{ scale: 1.02 }}

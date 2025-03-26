@@ -3,6 +3,7 @@ import Navbar2 from './Navbar'
 import Tagline2 from './Tagline'
 import Features from './Features'
 import { motion } from 'framer-motion'
+import bgImage from '../assets/images/bnw-bg3.jpg';
 
 const MainSection2: React.FC = () => {
 
@@ -16,7 +17,7 @@ const MainSection2: React.FC = () => {
                 transition={{ duration: 1.2 }}
             >
                 <img 
-                    src="/images/bnw-bg3.jpg" 
+                    src={bgImage} 
                     alt="Background" 
                     className="w-full h-full object-cover brightness-[0.12]" 
                 />

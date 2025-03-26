@@ -1,5 +1,6 @@
 import React from 'react';
 import { CodeLiner, SolutionLiner, GlobeLiner } from '../components/assets/Icons';
+import advaiyaImg from '../components/assets/images/advaiya.png';
 
 export interface FeatureCardType {
     icon: React.ReactNode;
@@ -55,7 +56,7 @@ export const ProjectDetails = [
         id : 1,
         projectName : 'Advaiya',
         description : 'Meet Advaiya—your intelligent Real Estate AI Assistant with a custom knowledge base. Transform property management with AI-driven efficiency. Efficiently manage, run, and grow your real estate business.',
-        image : '/images/advaiya.png',
+        image : advaiyaImg,
         techStack : [ 'Web Assembly', 'Surreal DB', 'gRPC', 'Meta prompts', 'Fucntion calling'],
         projectRoute : '/Advaiya',
         contributors : [

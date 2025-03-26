@@ -1,5 +1,5 @@
-import GRPC from "../../../public/images/grpc.png";
-import Surreal from "../../../public/images/surreal.png";
+import GRPC from "../assets/images/grpc.png";
+import Surreal from "../assets/images/surreal.png";
 
 export const GitHub = ({ size = 44, color = "currentColor", ...props }) => (
   <svg
