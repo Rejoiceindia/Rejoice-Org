@@ -1,24 +1,22 @@
-# RejoiceIndia Community Website
+# Rejoice India PropTech - AI-Driven Real Estate Innovation
 
-Welcome to the **RejoiceIndia** community site! This platform serves as a hub for our community's efforts in implementing technology in real estate. The website provides an overview of the community and details about ongoing projects. The site is built using **React**, **Vite**, and **TypeScript** to ensure a fast and modern web experience.
+Welcome to the **Rejoice India Proptech** community site! This platform showcases our initiatives in revolutionizing real estate through artificial intelligence and cutting-edge technology.
+
+We're an AI-first community-driven initiative focused on transforming the real estate industry through cutting-edge technology solutions. We develop open-source AI-powered tools and platforms that revolutionize property management, real estate transactions, and proptech infrastructure. Our mission is to leverage artificial intelligence and modern web technologies to solve complex challenges in the real estate sector, making operations more efficient and accessible.
+
+Our community brings together AI engineers, software developers, real estate professionals, and technology enthusiasts to build intelligent solutions that automate repetitive tasks, provide data-driven insights, and create seamless digital experiences for the Indian real estate market.
+
+## Live Demo
+
+You can view the live website at: [https://rejoiceindia.github.io/Rejoice-Org/](https://rejoiceindia.github.io/Rejoice-Org/)
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Tech Stack](#tech-stack)
 - [Setup & Installation](#setup--installation)
 - [Running the Project](#running-the-project)
-- [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
-- [License](#license)
-
-## Overview
-
-RejoiceIndia is a community-driven initiative that focuses on implementing innovative technology solutions to revolutionize the real estate industry. Our community fosters collaboration, knowledge-sharing, and the development of technology-driven real estate projects.
-
-### Features:
-- **Community Overview**: Information about the RejoiceIndia community.
-- **Ongoing Projects**: Updates on active projects powered by our community.
+- [Copyright](#copyright)
 
 ## Tech Stack
 
@@ -26,6 +24,9 @@ The website is built with the following technologies:
 - **React**: A popular JavaScript library for building user interfaces.
 - **Vite**: A fast build tool and development server for modern web projects.
 - **TypeScript**: A statically typed superset of JavaScript that enhances code quality and tooling support.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Framer Motion**: A production-ready motion library for React that makes animations easy.
+
 
 ## Setup & Installation
 
@@ -36,7 +37,7 @@ To get started with the project locally, follow the steps below:
 Make sure you have the following tools installed:
 
 - **Node.js** (v14.0 or higher) – [Install Node.js](https://nodejs.org/)
-- **npm** (comes with Node.js) or **Yarn** (optional, can be used as a package manager instead of npm).
+- **npm** (comes with Node.js)
 
 ### Clone the Repository
 
@@ -51,28 +52,16 @@ cd Rejoice-Org
 
 Once inside the project folder, install the required dependencies:
 
-Using npm:
 ```bash
 npm install
-```
-
-Using Yarn (optional):
-```bash
-yarn install
 ```
 
 ## Running the Project
 
 To start the development server and run the project locally, use the following command:
 
-Using npm:
 ```bash
 npm run dev
-```
-
-Using Yarn (optional):
-```bash
-yarn dev
 ```
 
 This will start the development server on [http://localhost:3000](http://localhost:3000) by default. You can open this URL in your browser to view the site.
@@ -81,37 +70,11 @@ This will start the development server on [http://localhost:3000](http://localho
 
 To create a production build of the site, use the following command:
 
-Using npm:
 ```bash
 npm run build
 ```
 
-Using Yarn (optional):
-```bash
-yarn build
-```
-
 This will generate an optimized, production-ready version of the site in the `dist/` folder.
-
-## Folder Structure
-
-Here's a brief overview of the project folder structure:
-
-```
-/rejoiceindia-community-site
-├── /public           # Public assets like images and static files
-├── /src              # Source code for the website
-│   ├── /assets       # Images and other static assets
-│   ├── /components   # Reusable components
-│   ├── /pages        # React pages (Community Overview, Projects, etc.)
-│   ├── /styles       # Global styles (CSS/SCSS)
-│   ├── /types        # TypeScript types
-│   └── main.tsx      # Entry point for React
-├── /dist             # Production build (generated after `npm run build`)
-├── package.json      # Project metadata and dependencies
-├── tsconfig.json     # TypeScript configuration
-└── vite.config.ts    # Vite configuration
-```
 
 ## Contributing
 
@@ -123,12 +86,12 @@ We welcome contributions from everyone! If you'd like to contribute, please foll
 4. Push to your branch (`git push origin feature-branch`).
 5. Open a pull request.
 
-Please make sure to follow the existing code style and include tests where applicable.
+Please make sure to follow the existing code style and design patterns used throughout the project.
 
-## License
+## Copyright
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+© 2024 Rejoice India PropTech. All content, designs, and code on this site are property of Rejoice India PropTech unless otherwise stated.
 
 ---
 
-Thank you for being a part of RejoiceIndia! Together, we can drive innovation in real estate through technology.
+Thank you for being a part of Rejoice India PropTech! Together, we are revolutionizing real estate through AI and technology.
