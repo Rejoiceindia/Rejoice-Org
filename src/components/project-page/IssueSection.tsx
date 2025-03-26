@@ -1,35 +1,42 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import { Button } from '../Home Page/Button';
 
-type Props = {};
-
-const IssueSection: React.FC<Props> = ({}) => {
+const IssueSec = () => {
   return (
-    <div className="w-[90%] sm:w-[75%] mx-auto rounded-2xl bg-gray-300 dark:bg-[#425af7] flex items-center justify-center py-10 px-5 sm:py-14">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.3 }}
-        className="max-w-2xl w-full text-center"
-        viewport={{
-          once: true,
-        }}
+    <motion.div 
+      className="w-full bg-black px-4 sm:px-6 md:px-10 py-10 sm:py-14 md:py-16"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div 
+        className="max-w-4xl mx-auto text-center text-white"
+        initial={{ y: 20 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-zinc-800 dark:text-white mb-6">
+        <motion.h2 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 md:mb-5"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           HAVE AN ISSUE ?
-        </h1>
-
-        <p className="text-zinc-800  dark:text-gray-300 text-sm sm:text-lg mb-8 leading-relaxed">
-          If you’re encountering bugs or issues in the project, report them in
+        </motion.h2>
+        <motion.p 
+          className="text-xs sm:text-sm md:text-base mb-6 sm:mb-8 text-gray-300 max-w-xl mx-auto"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          If you’re encountering bugs or issues in the project, report them in <br />
           our GitHub repository to help us resolve them quickly!
-        </p>
-
-        <button className="bg-gray-700 hover:bg-gray-800 dark:bg-gradient-to-b dark:from-black dark:to-[#1f1f2a] dark:hover:from-[#1f1f2a] dark:hover:to-black  text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors duration-300  cursor-pointer active:scale-90">
-          Post Issue
-        </button>
+        </motion.p>
+        
+        <Button text='Post an Issue' link='https://github.com/Rejoiceindia/Advaiya/issues'/>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
-export default IssueSection;
+export default IssueSec;

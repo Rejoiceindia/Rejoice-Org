@@ -2,7 +2,6 @@ import React from "react";
 import TechStackItem from "./ui/TechStackItem";
 import { motion } from "framer-motion";
 import StyledHeading from "./ui/StyledHeading";
-import { Grpc, SurrealDB, Wasm } from "../assets/Icons";
 import {
   SiGit,
   SiLua,
@@ -67,8 +66,8 @@ const TechStackComponent: React.FC<Props> = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 py-16 bg-[#0a0a0a] w-full">
-      <StyledHeading>Technology Stack</StyledHeading>
+    <div className="flex flex-col items-center gap-10 py-16 w-full">
+      <StyledHeading>TECH STACK</StyledHeading>
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-4"
         variants={containerVariants}

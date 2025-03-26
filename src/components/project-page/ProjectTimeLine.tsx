@@ -21,7 +21,7 @@ const ProjectTimeline: React.FC<Props> = ({ items }) => {
       <StyledHeading>PROJECT TIMELINE</StyledHeading>
 
       <div className="relative">
-        <div className="absolute left-[7px] top-0 bottom-0 w-0.5 h-[85%] bg-indigo-500" />
+        <div className="absolute left-[7px] top-0 bottom-0 w-0.5 h-[85%] bg-[#00FF66]/50" />
         {items.map((item, index) => (
           <motion.div
             key={item.phase}
@@ -32,13 +32,13 @@ const ProjectTimeline: React.FC<Props> = ({ items }) => {
             }}
             transition={{ delay: index * 0.2, duration: 0.4 }}
             className={`relative mb-12 last:mb-0 ml-12 ${
-              index > currentPhase ? "blurred" : ""
+              index > currentPhase ? "opacity-50 filter blur-[4px]" : ""
             }`}
           >
             {index === currentPhase ? (
-              <div className="absolute ring-2 ring-green-500 -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
+              <div className="absolute ring-2 ring-white -left-12 w-4 h-4 rounded-full bg-[#00FF66]/50 border-8 border-[#017f33]" />
             ) : (
-              <div className="absolute -left-12 w-4 h-4 rounded-full bg-indigo-500 border-8 border-indigo-500" />
+              <div className="absolute -left-12 w-4 h-4 rounded-full bg-[#00FF66]/50 border-8 border-[#017f33]" />
             )}
 
             <div className="space-y-2">

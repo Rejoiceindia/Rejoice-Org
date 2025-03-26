@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import StyledHeading from "./ui/StyledHeading";
 import { GitBranch, People, Star } from "../assets/Icons";
@@ -9,27 +9,28 @@ type Props = {
 
 const Stats = [
   {
-    icon: <Star size={20} color="yellow" />,
+    icon: <Star size={20} color="#00FF66" />,
     title: "10 Stars",
     subtitle: "On GitHub",
   },
   {
-    icon: <GitBranch size={20} color="green" />,
-    title: "35 Forks",
+    icon: <GitBranch size={20} color="#00FF66" />,
+    title: "8 Forks",
     subtitle: "Active Development",
   },
   {
-    icon: <People size={20} color="blue" />,
-    title: "38 Contributors",
+    icon: <People size={20} color="#00FF66" />,
+    title: "13 Contributors",
     subtitle: "Global Community",
   },
 ];
 
 const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
   return (
-    <div className="flex flex-col gap-8 sm:p-10">
-      <StyledHeading textAlign="left">MORE ABOUT THIS PROJECT</StyledHeading>
-      <div className="flex gap-5 flex-col sm:flex-row">
+    <div className="flex flex-col gap-4 px-4 sm:px-6 md:px-10 max-w-7xl mx-auto w-full mt-8 sm:mt-10">
+      <StyledHeading >MORE ABOUT THIS PROJECT</StyledHeading>
+      
+      <div className="flex gap-5 flex-col sm:flex-row w-full mt-2">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -37,10 +38,10 @@ const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
             once: true,
           }}
           transition={{ delay: 0.2, duration: 0.4 }}
-          className="flex flex-col w-11/12 sm:w-3/5 mx-auto text-left items-center justify-center"
+          className="flex flex-col w-full sm:w-3/5 mx-auto text-left"
         >
-          <p className="text-gray-700 dark:text-gray-300 dark:duration-300 mb-4">
-            {projectDetailsText[0]}
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
+            {projectDetailsText[0]} <br /> <br /> {projectDetailsText[1]}
           </p>
         </motion.div>
       </div>
@@ -51,18 +52,20 @@ const ProjectDetails: React.FC<Props> = ({ projectDetailsText }) => {
           once: true,
         }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="w-11/12 sm:w-3/5 mx-auto grid grid-cols-2 sm:grid-cols-3"
+        className="w-full sm:w-3/5 mx-auto mt-6 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-4"
       >
         {Stats.map((stat, index) => {
           return (
             <div
               key={index}
-              className="flex items-start sm:items-center justify-center gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
             >
-              {stat.icon}
-              <div className="flex flex-col gap-2 items-start justify-center">
-                <h3 className="text-base text-white">{stat.title}</h3>
-                <h4 className="text-sm text-zinc-500">{stat.subtitle}</h4>
+              <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10">
+                {stat.icon}
+              </div>
+              <div className="flex flex-col gap-1 items-start justify-center">
+                <h3 className="text-sm sm:text-base font-medium text-white">{stat.title}</h3>
+                <h4 className="text-xs sm:text-sm text-zinc-500">{stat.subtitle}</h4>
               </div>
             </div>
           );

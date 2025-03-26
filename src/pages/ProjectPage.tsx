@@ -11,34 +11,34 @@ import TechStackComponent from "../components/project-page/TechStackList";
 import FeaturesSection from "../components/project-page/FeaturesSection";
 import ProjectTimeline from "../components/project-page/ProjectTimeLine";
 import ContributorsSection from "../components/project-page/ContributorsSection";
-import SponsorSection from "../components/project-page/SponsorSection";
-import IssueSection from "../components/project-page/IssueSection";
-import Footer from "../components/Home-page/Footer";
-import ProjectDetailsImage from "../../public/images/ai-assistant-demo.png";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer2 from "../components/Home Page/Footer";
+import IssueSec from "../components/project-page/IssueSection";
+import SponsorSec from "../components/project-page/SponsorSection";
 
 type Props = {};
 
 const ProjectPage: React.FC<Props> = () => {
   return (
-    <div className="flex flex-col gap-20 w-full text-white bg-[#f0f0f0] dark:bg-[#0d0d0d]">
+    <div className="flex flex-col w-full text-white bg-black">
       <ScrollToTop />
       <HeroSection
         projectName={projectData.projectName}
         projectDescription={projectData.projectDescription}
         projectGithubLink={projectData.projectGithubLink}
       />
-      <ProjectDetails
-        projectDetailsText={projectData.projectDetailsText}
-        projectDetalsImage={ProjectDetailsImage}
-      />
-      <TechStackComponent />
-      <FeaturesSection featuresList={featureList} />
-      <ProjectTimeline items={projectData.projectTimelineData} />
-      <ContributorsSection contributorList={contributorList} />
-      <SponsorSection sponsorList={sponsorList} />
-      <IssueSection />
-      <Footer />
+      <div className="flex flex-col space-y-16 sm:space-y-24 md:space-y-32 pb-16">
+        <ProjectDetails
+          projectDetailsText={projectData.projectDetailsText} 
+        />
+        <TechStackComponent />
+        <FeaturesSection featuresList={featureList} />
+        <ProjectTimeline items={projectData.projectTimelineData} />
+        <ContributorsSection contributorList={contributorList} />
+        <IssueSec/>
+        <SponsorSec sponsorList={sponsorList}/>
+      </div>
+      <Footer2/>
     </div>
   );
 };

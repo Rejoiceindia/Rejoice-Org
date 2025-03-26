@@ -1,33 +1,50 @@
-// import Navbar from "../components/Home-page/Navbar"
-// import Tagline from "../components/Home-page/Tagline"
-import JoinCommunity from "../components/Home-page/JoinCommunity"
-import Footer from "../components/Home-page/Footer"
-import ProjectCard from "../components/Home-page/ProjectCard"
-import { ProjectDetails } from "../Data/ProjectCard"
-import MainSection from "../components/Home-page/MainSection"
+import MainSection2 from '../components/Home Page/MainSection'
+import ProjectSection from '../components/Home Page/ProjectSection'
+import JoinCommunitySection from '../components/Home Page/JoinCommunitySection'
+import Footer2 from '../components/Home Page/Footer'
+import { motion } from 'framer-motion'
 
-
-const Home = () => {
+  
+const NewHome: React.FC = () => {
   return (
-    <div className="w-full min-h-screen">
-        
-        <MainSection/>
-        
-        <h1 className="text-3xl text-center tracking-wider font-bold dark:text-white dark:duration-300">
-            OUR PROJECTS
-        </h1>
-
-        <div className="project-cards flex flex-wrap justify-center mt-12 gap-8">
-            {ProjectDetails.map((project, index) => (
-                <ProjectCard key={project.id} {...project} index={index}/>
-            ))}
-        </div>
-
-        <JoinCommunity />
-
-        <Footer />
+    <div className="flex flex-col min-h-screen">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <MainSection2 />
+      </motion.div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <ProjectSection />
+      </motion.div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <JoinCommunitySection />
+      </motion.div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <Footer2 />
+      </motion.div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default NewHome
