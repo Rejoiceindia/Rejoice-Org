@@ -151,7 +151,7 @@ const Footer2: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <p className="text-gray-500 text-sm mb-4 sm:mb-0">
-            © 2024 Rejoice India. All rights reserved.
+            © 2024 Rejoice India Proptech. All rights reserved.
           </p>
           
           {/* Social Media Links */}
