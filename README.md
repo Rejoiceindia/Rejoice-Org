@@ -1,4 +1,4 @@
-# Rejoice India PropTech - AI-Driven Real Estate Innovation
+# Rejoice India PropTech
 
 Welcome to the **Rejoice India Proptech** community site! This platform showcases our initiatives in revolutionizing real estate through artificial intelligence and cutting-edge technology.
 
