@@ -45,7 +45,7 @@ export const FeaturesData = [
         <GlobeLiner size={30} color="#00FF66" />
       </div> ,
         title: "Global Collaboration",
-        description: "Join a worldwide community of developers and industry experts shaping the future of real estate tech."
+        description: "Join a worldwide community of developers and industry experts re-shaping the future of real estate tech."
     }
 ] 
 

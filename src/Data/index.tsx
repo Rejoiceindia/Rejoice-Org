@@ -6,11 +6,11 @@ import { BiKey } from "react-icons/bi";
 export const projectData = {
   projectName: "Advaiya",
   projectDescription:
-    "Advaiya, she is your intelligent Real Estate Al Assistant with a custom knowledge base. She can run, manage, automate, and streamline repetitive and routine business operations with minimal to no human intervention, allowing you to focus on property visits and conversions-your core revenue-generating activities within any real estate business operations.",
-  projectGithubLink: "https://github.com/Rejoiceindia",
+    "Your Real Estate Al Assistant with a custom knowledge base. She can run, manage, automate, and streamline repetitive and routine business operations with minimal to no human intervention, allowing you to focus on property visits and conversions-your core revenue-generating activities within any real estate business operations.",
+  projectGithubLink: "https://github.com/Rejoiceindia/Advaiya",
   projectDetailsText: [
-    "Adyaia is an advanced Real Estate AI Assistant designed to transform how you manage your business. With a custom knowledge base tailored specifically to your needs, she can seamlessly handle, automate, and streamline the repetitive and time-consuming tasks that come with running a real estate business. From property listings and client communications to transaction management and data analysis, Adyaia is built to operate with minimal human input, maximizing efficiency and reducing operational costs.",
-    "By leveraging AI-driven insights and automation, Adyaia enhances productivity, allowing you to focus on strategic growth and client relationships. Whether you're managing multiple properties, analyzing market trends, or keeping track of ongoing tasks, Adyaia ensures smooth, error-free operations—so you can stay ahead in the competitive real estate market.",
+    "Advaiya is an advanced Real Estate AI Assistant designed to transform how you manage your business. With a custom knowledge base tailored specifically to your needs, she can seamlessly handle, automate, and streamline the repetitive and time-consuming tasks that come with running a real estate business. From property listings and client communications to transaction management and data analysis, Advaiya is built to operate with minimal human input, maximizing efficiency and reducing operational costs.",
+    "By leveraging AI-driven insights and automation, Advaiya enhances productivity, allowing you to focus on strategic growth and client relationships. Whether you're managing multiple properties, analyzing market trends, or keeping track of ongoing tasks, Advaiya ensures smooth, error-free operations—so you can stay ahead in the competitive real estate market.",
   ],
   projectDetalsImage: "../assets/images/ai-assistant-demo.png",
   projectTimelineData: [
@@ -36,13 +36,13 @@ export const projectData = {
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
     },
-    {
-      phase: "Phase 4",
-      title: "Conceptualization & Research",
-      period: "Q3 2024 - Q4 2024",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
-    },
+    // {
+    //   phase: "Phase 4",
+    //   title: "Conceptualization & Research",
+    //   period: "Q3 2024 - Q4 2024",
+    //   description:
+    //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro ducimus sed, reprehenderit eligendi perferendis fugit totam blanditiis non laudantium iste veritatis dolore, eaque minima? Ea, magnam! Possimus, unde modi.",
+    // },
   ],
 };
 
@@ -109,6 +109,30 @@ export interface Contributor {
 
 export const contributorList: Contributor[] = [
   {
+    name: "Kamal Raj",
+    role: "Project Tech Advisor",
+    socialLinks: {
+      github: "https://github.com/insightbuilder",
+      linkedin: "#",
+    },
+  },
+  {
+    name: "Prashanth Zende",
+    role: "Project Coordinator",
+    socialLinks: {
+      github: "https://github.com/PrashantIndia",
+      linkedin: "#",
+    },
+  },
+  {
+    name: "Roshanali Narsindani",
+    role: "Project Coordinator",
+    socialLinks: {
+      github: "raghavendrashande",
+      linkedin: "https://www.linkedin.com/in/roshanalinarsindani",
+    },
+  },
+  {
     name: "Raghavendra S H",
     role: "Systems engineer",
     socialLinks: {
@@ -117,11 +141,19 @@ export const contributorList: Contributor[] = [
     },
   },
   {
-    name: "Roshanali Narsindani",
-    role: "rex3992",
+    name: "Hardik Kandpal",
+    role: "AI Engineer",
     socialLinks: {
-      github: "raghavendrashande",
-      linkedin: "https://www.linkedin.com/in/roshanalinarsindani",
+      github: "https://github.com/HardikKandpal",
+      linkedin: "",
+    },
+  },
+  {
+    name: "Jashmeet Panda",
+    role: "Business Intelligence Engineer",
+    socialLinks: {
+      github: "https://github.com/JashmeetPanda",
+      linkedin: "helloaneesh",
     },
   },
   {
@@ -136,8 +168,8 @@ export const contributorList: Contributor[] = [
     name: "Basita Tashfeen",
     role: "Business Intelligence Engineer",
     socialLinks: {
-      github: "",
-      linkedin: "",
+      github: "https://github.com/basita512",
+      linkedin: "#",
     },
   },
 ];
