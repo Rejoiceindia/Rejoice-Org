@@ -63,7 +63,7 @@ To start the development server and run the project locally, use the following c
 npm run dev
 ```
 
-This will start the development server on [http://localhost:3000](http://localhost:3000) by default. You can open this URL in your browser to view the site.
+This will start the development server on [http://localhost:5173](http://localhost:5173) by default. You can open this URL in your browser to view the site.
 
 ## Contributing
 
