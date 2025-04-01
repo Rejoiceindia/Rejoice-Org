@@ -16,7 +16,6 @@ You can view the live website at: [https://rejoiceindia.github.io/Rejoice-Org/](
 - [Setup & Installation](#setup--installation)
 - [Running the Project](#running-the-project)
 - [Contributing](#contributing)
-- [Copyright](#copyright)
 
 ## Tech Stack
 
@@ -64,7 +63,7 @@ To start the development server and run the project locally, use the following c
 npm run dev
 ```
 
-This will start the development server on [http://localhost:3000](http://localhost:3000) by default. You can open this URL in your browser to view the site.
+This will start the development server on [http://localhost:5173](http://localhost:5173) by default. You can open this URL in your browser to view the site.
 
 ## Contributing
 
@@ -77,10 +76,6 @@ We welcome contributions from everyone! If you'd like to contribute, please foll
 5. Open a pull request.
 
 Please make sure to follow the existing code style and design patterns used throughout the project.
-
-## Copyright
-
-© 2024 Rejoice India PropTech. All content, designs, and code on this site are property of Rejoice India PropTech unless otherwise stated.
 
 ---
 
